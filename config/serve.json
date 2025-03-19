@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://developsg.sharepoint.com/sites/ONESEASolution",
+      "customActions": {
+        "a5a6ca4c-c520-4eca-81ab-99a2b5468934": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "globalNav": {
+      "pageUrl": "https://developsg.sharepoint.com/sites/ONESEASolution",
+      "customActions": {
+        "a5a6ca4c-c520-4eca-81ab-99a2b5468934": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}

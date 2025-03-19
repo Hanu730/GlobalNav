@@ -1,0 +1,643 @@
+// .header {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     background: linear-gradient(to right, #003366, #0055A4);
+//     padding: 10px 20px;
+//     color: white;
+//   }
+  
+//   .logoContainer {
+//     display: flex;
+//     align-items: center;
+//   }
+  
+//   .logo {
+//     height: 50px;
+//   }
+  
+//   .nav {
+//     display: flex;
+//     align-items: center;
+//     gap: 15px;
+//   }
+  
+//   .navItem {
+//     color: white;
+//     text-decoration: none;
+//     font-weight: bold;
+//     cursor: pointer;
+//     padding: 5px 10px;
+//   }
+  
+//   .navItem:hover {
+//     text-decoration: underline;
+//   }
+  
+//   .userInfo {
+//     font-weight: bold;
+//   }
+
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0078d4; // Fluent UI Primary color
+    color: white;
+    flex-wrap: wrap;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .commandBar {
+    background: transparent !important; // Removes default background
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  
+    .ms-CommandBar {
+      background: transparent !important;
+    }
+  
+    .ms-CommandBarItem {
+      color: white !important; // Ensures text is white
+      font-weight: bold;
+    }
+  
+    .ms-CommandBarItem:hover {
+      background: rgba(255, 255, 255, 0.2) !important; // Hover effect
+    }
+  
+    .ms-OverflowSet {
+      justify-content: center;
+    }
+  
+    @media (max-width: 768px) {
+      display: none; // Hide menu in mobile view (can replace with hamburger)
+    }
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  
+    .logo {
+      width: 120px;
+      height: auto;
+    }
+  }
+  
+  .navContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+  
+    @media (max-width: 768px) {
+      display: none; // Hide menu on small screens
+    }
+  }
+  
+  .userInfo {
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+  .megaMenu {
+  width: 600px !important;
+  display: flex !important;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.megaMenu .ms-ContextualMenu-list {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.megaMenu .ms-ContextualMenu-item {
+  flex: 1 1 30%;
+  padding: 8px;
+}
+
+.megaMenu .ms-ContextualMenu-itemHeader {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #0078d4;
+  margin-bottom: 5px;
+}
+
+.commandBar {
+  background: transparent !important;
+  border: none;
+  padding: 0;
+
+  .ms-CommandBarItem {
+    color: white !important;
+    font-weight: bold;
+  }
+
+  .ms-CommandBarItem:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+  }
+}
+
+.megaMenu {
+    width: 600px !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .megaMenu .ms-ContextualMenu-list {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .megaMenu .ms-ContextualMenu-item {
+    flex: 1 1 30%;
+    padding: 8px;
+  }
+  
+  .megaMenu .ms-ContextualMenu-itemHeader {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #0078d4;
+    margin-bottom: 5px;
+  }
+  
+  .commandBar {
+    background: transparent !important;
+    border: none;
+    padding: 0;
+  
+    .ms-CommandBarItem {
+      color: white !important;
+      font-weight: bold;
+    }
+  
+    .ms-CommandBarItem:hover {
+      background: rgba(255, 255, 255, 0.2) !important;
+    }
+  }
+  .headerContainer {
+    background-color: #004A99;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navItem {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .navItem:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .megaMenuContainer {
+    position: absolute;
+    top: 40px; // Adjust based on header height
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    z-index: 1000;
+  }
+  
+  .megaMenuColumn {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .megaMenuTitle {
+    font-weight: bold;
+    color: #004A99;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .megaMenuItem {
+    list-style: none;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  .megaMenuItem:hover {
+    text-decoration: underline;
+  }
+  
+  .megaMenuWrapper {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .megaMenuTrigger {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0078d4;
+  }
+  
+  .megaMenuContainer {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 600px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: flex;
+    z-index: 1000;
+  }
+  
+  .megaMenuColumn {
+    flex: 1;
+    margin-right: 15px;
+  }
+  
+  .megaMenuTitle {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .megaMenuItem {
+    list-style: none;
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  
+  .megaMenuItem:hover {
+    background: #f3f3f3;
+    cursor: pointer;
+  }
+  .megaMenuContainer {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .megaMenuColumn {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px; /* Adjust width for layout */
+    margin-right: 20px; /* Spacing between columns */
+  }
+  
+  .megaMenuItem {
+    padding: 5px 10px;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .megaMenuItem:hover {
+    background-color: #f0f0f0;
+  }
+    
+  .megaMenuContainer {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .megaMenuColumn {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+    margin-right: 20px;
+  }
+  
+  .megaMenuItem {
+    padding: 5px 10px;
+    white-space: nowrap;
+    cursor: pointer;
+    color: black; /* Ensure the text is visible */
+    font-size: 14px; /* Adjust font size for readability */
+    font-weight: 500;
+  }
+  
+  .megaMenuItem:hover {
+    background-color: #f0f0f0;
+    color: #333; /* Darken text on hover for better contrast */
+  }
+  .megaMenuContainer {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 600px; /* Ensure the width allows multiple columns */
+  }
+  
+  .megaMenuColumn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 200px; /* Set max height before wrapping */
+    min-width: 180px;
+    margin-right: 20px;
+  }
+  
+  .megaMenuTitle {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 3px;
+  }
+  
+  .megaMenuItemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .megaMenuItem {
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    width: 50%; /* Display items side by side */
+  }
+  
+  .megaMenuItem:hover {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  .megaMenuContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    padding: 15px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .megaMenuColumn {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+  }
+  
+  .megaMenuTitle {
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 5px;
+  }
+  
+  .megaMenuItemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds spacing between items */
+  }
+  
+  .megaMenuItem {
+    flex: 1 1 calc(20% - 10px); /* Ensures max 5 items per row */
+    padding: 5px 10px;
+    white-space: nowrap;
+    color: #333;
+  }
+  
+  .megaMenuItem:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .megaMenuContainer {
+    display: flex;
+    flex-direction: column; /* Main categories in vertical */
+    gap: 15px; /* Space between categories */
+  }
+  
+  .megaMenuCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between category title and sublinks */
+  }
+  
+  .megaMenuTitle {
+    font-weight: bold;
+    color: #003366; /* Adjust color */
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .megaMenuItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px; /* Space between sublinks */
+  }
+  
+  .megaMenuItem {
+    flex: 0 1 calc(20% - 20px); /* Ensures max 5 per row */
+    white-space: nowrap;
+    padding: 5px 10px;
+  }
+
+  .megaMenuContainer {
+    display: flex;
+    justify-content: space-between; /* Evenly spaces main categories */
+    gap: 20px;
+    background: #fff; /* Adjust background color */
+    padding: 20px;
+  }
+  
+  .megaMenuCategory {
+    flex: 1; /* Equal width for all categories */
+    min-width: 200px; /* Prevents categories from getting too small */
+  }
+  
+  .megaMenuTitle {
+    font-weight: bold;
+    color: #003366; /* Matches your template */
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .megaMenuItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    gap: 10px 20px;
+    padding-top: 10px;
+  }
+  
+  .megaMenuItem {
+    white-space: nowrap;
+    color: #333;
+  }
+  .megaMenuContainer {
+    display: flex;
+    flex-direction: row; /* Categories in horizontal row */
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: max-content;
+  }
+  
+  .megaMenuColumn {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .megaMenuTitle {
+    font-weight: bold;
+    color: #003366;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .megaMenuItemsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ensures horizontal sub-links */
+    gap: 10px 20px;
+  }
+  
+  .megaMenuItem {
+    white-space: nowrap;
+    color: #333;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #003366, #0055A4); /* Blue gradient */
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .commandBar {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .commandBar .ms-CommandBarItem {
+    color: white !important;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .userInfo {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+      
+
+  .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 10px;
+    max-height: 48px;
+    max-width: 144px;
+    border: none;
+    width: auto;
+    min-height: 48px;
+    min-width: 48px;
+  }
+  
+  .portalTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .navLinks {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .link {
+    text-decoration: none;
+    //color: #1a73e8;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  
+    .dropdownButton {
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  
+    .dropdownContent {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      min-width: 150px;
+    }
+  
+    &:hover .dropdownContent {
+      display: block;
+    }
+  }
+  
+  .logoContainer .logo{
+    height: auto;
+     width: 0px; 
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="GlobalNav"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="a5a6ca4c-c520-4eca-81ab-99a2b5468934"
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </CustomAction>
+</Elements>
