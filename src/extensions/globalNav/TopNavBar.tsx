@@ -5,6 +5,15 @@ interface IIntranetNavBarProps {
 }
 
 const IntranetNavBar: React.FC<IIntranetNavBarProps> = ({ context }) => {
+    React.useEffect(() => {
+        // Add class to the body to apply the CSS-based hiding
+        document.body.classList.add(styles.hideSiteHeader);
+    
+        // Cleanup on unmount
+        return () => {
+          document.body.classList.remove(styles.hideSiteHeader);
+        };
+      }, []);
     return (
       <div className={styles.navBar}>
         {/* Logo Section */}

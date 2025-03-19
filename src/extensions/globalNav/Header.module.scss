@@ -641,3 +641,14 @@
     height: auto;
      width: 0px; 
 }
+
+// Hide the SharePoint site header
+// Matches class names starting with 'headerRow-'
+// Hide site header, app bar, and suite nav placeholder
+.hideSiteHeader [class^="headerRow-"],#sp-appBar,#SuiteNavPlaceholder {
+  display: none !important;
+}
+:global(#sp-appBar),
+:global(#SuiteNavPlaceholder) {
+  display: none !important;
+}
