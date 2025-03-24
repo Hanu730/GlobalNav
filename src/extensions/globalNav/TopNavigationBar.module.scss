@@ -1,0 +1,78 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  
+    img {
+      height: 40px;
+      margin-right: 10px;
+    }
+  
+    .portalTitle {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    .menuItem {
+      position: relative;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: capitalize;
+      
+      a {
+        text-decoration: none;
+        color: black;
+      }
+  
+      &:hover {
+        color: red;
+      }
+  
+      &.active {
+        border-bottom: 2px solid red;
+      }
+  
+      .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        list-style: none;
+        padding: 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        min-width: 150px;
+        display: none;
+      }
+  
+      &:hover .submenu {
+        display: block;
+      }
+  
+      .submenu li {
+        padding: 10px;
+        cursor: pointer;
+      }
+  
+      .submenu li:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+  
